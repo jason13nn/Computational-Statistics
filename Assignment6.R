@@ -1,0 +1,34 @@
+#ex1
+multiply<-function(x,y){
+  y*x
+}
+#ex2
+x<-c(2,3,4,5,6)
+MAD<-function(x){
+  median(abs(x-median(x)))
+}
+MAD(x)
+#ex3
+e3<-function(n){
+  x<-rnorm(n)
+  (length(which((abs(x)<=2)))/n)*100
+}
+ee(10000)
+#and
+ee_<-function(n){
+  x<-rnorm(n)
+  (sum(abs(x)<=2)/n)*100
+}
+ee_(10000)
+
+#ex4
+normal<-function(n){
+  x<-rnorm(n)
+  a1<-(sum(abs(x)<=1)/n)*100
+  a2<-(sum(abs(x)<=2)/n)*100
+  a3<-(sum(abs(x)<=3)/n)*100
+  print(a1)
+  print(a2)
+  print(a3)
+}
+normal(10000)
